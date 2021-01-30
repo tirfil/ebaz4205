@@ -26,5 +26,9 @@ You will find a zynq_fsbl directory with source code.
 Copy main.c, uboot_loader.h , uboot_loader.c in it. Build to create a fsbl.elf file
 Create the BOOT.bin file using fsbl.elf (bootloader) and block_design.bit
 
+Note:
+=====
+Networking seems good ... but ping outside board did'nt work
+After updating /boot/zynq-ebaz4205.dtb ping is OK. 
 
 
