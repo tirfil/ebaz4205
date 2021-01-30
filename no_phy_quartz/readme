@@ -1,5 +1,13 @@
 Some ebaz4205 have no 25 MHz quartz for ethernet PHY (IPI101GA).
-With original buildroot sd card, linux boot normally but eth0 is not detected !
+With original buildroot sd card, linux boots normally but eth0 is not detected !
+
+Use the original SD card. Erase BOOT.bin and copy the new BOOT.bin
+Now eth0 device is detected ...
+
+You will find the final BOOT.bin here.
+
+More details:
+=============
 
 You need to install Xilinx Vivado and Vitis tools.
 Look this tutorial: https://hhuysqt.github.io/zynq1 + google translate
@@ -18,8 +26,5 @@ You will find a zynq_fsbl directory with source code.
 Copy main.c, uboot_loader.h , uboot_loader.c in it. Build to create a fsbl.elf file
 Create the BOOT.bin file using fsbl.elf (bootloader) and block_design.bit
 
-Use the original SD card. Erase BOOT.bin and copy the new BOOT.bin
-Now eth0 device is detected ...
 
-You will find the final BOOT.bin here.
 
